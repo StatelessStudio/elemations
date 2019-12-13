@@ -1,0 +1,23 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": "./src/",
+		"outDir": "./",
+		"sourceMap": true,
+		"declaration": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es2015",
+		"types": [],
+		"typeRoots": ["./lib"],
+		"lib": [
+		  "es2018",
+		  "dom"
+		]
+	},
+	"exclude": [
+		"./test/"
+	]
+}

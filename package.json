@@ -1,0 +1,33 @@
+{
+	"name": "elemations",
+	"version": "0.0.0",
+	"description": "HTML Element Animations",
+	"main": "elemations.js",
+	"directories": {
+		"test": "test"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"scripts": {
+		"test": "npm run build && jasmine --config=test/jasmine",
+		"build": "tsc --p tsconfig.json",
+		"build:spec": "tsc --p tsconfig.json && tsc --p tsconfig.spec.json",
+		"postinstall": "tsc --p tsconfig.dist.json",
+		"doc": "typedoc --out docs src --excludeNotExported"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/StatelessStudio/elemations.git"
+	},
+	"author": "stateless-studio",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/StatelessStudio/elemations/issues"
+	},
+	"homepage": "https://github.com/StatelessStudio/elemations#readme",
+	"keywords": [
+		"typescript",
+		"html",
+		"animation"
+	]
+}
