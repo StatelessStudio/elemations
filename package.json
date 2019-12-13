@@ -1,6 +1,6 @@
 {
 	"name": "elemations",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "HTML Element Animations",
 	"main": "elemations.js",
 	"directories": {

@@ -63,7 +63,9 @@ export class Elemation {
 	 */
 	public trigger() {
 		const halfScreen = window.scrollY + (window.innerHeight * 0.5);
-		return halfScreen >= this.topEndstop && halfScreen <= this.bottomEndstop;
+		return (halfScreen >= this.topEndstop && halfScreen <= this.bottomEndstop) ||
+			(window.scrollY + window.innerHeight >= this.bottomEndstop &&
+			window.scrollY <= this.topEndstop);
 	}
 
 	/**
