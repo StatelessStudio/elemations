@@ -1,13 +1,15 @@
 {
 	"name": "elemations",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "HTML Element Animations",
 	"main": "elemations.js",
 	"directories": {
 		"test": "test"
 	},
 	"dependencies": {},
-	"devDependencies": {},
+	"devDependencies": {
+		"typescript": "^3.7.3"
+	},
 	"scripts": {
 		"test": "npm run build && jasmine --config=test/jasmine",
 		"build": "tsc --p tsconfig.json",
